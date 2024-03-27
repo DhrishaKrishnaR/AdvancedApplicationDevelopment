@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Reenie+Beanie');
+
+
+
+img {
+    width: 100%;
+}
+
+
+.caption,
+h1 {
+    font-family: monospace;
+    font-size: 2em;
+    padding: 10px 10px 0 10px;
+}
+
+.date {
+    font-size: 0.75em;
+}
+
+.description {
+    font-size: 1.5em;
+    padding: 0 20px 20px 20px;
+    text-align: left;
+}
+
+.container3 {
+    perspective: 1000px;
+    display: inline-block;
+    margin: 3%;
+}
+
+.container3:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.container3,
+.front,
+.back {
+    width: 350px;
+    height: 350px;
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+button[type="submitf"] {
+    font-size: 15px;
+    margin-left: 100px;
+    color: white;
+    padding: 10px;
+    background-color: rgb(16, 17, 17);
+}
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
