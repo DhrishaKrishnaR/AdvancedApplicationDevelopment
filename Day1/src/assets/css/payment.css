@@ -1,0 +1,201 @@
+/* Colors */
+.color-neutral-light {
+    background-color: #0F6AB0;
+  }
+  
+  .color-neutral-dark {
+    background-color: #053F6F;
+  }
+  
+  .color-primary {
+    background-color: #89CB75;
+  }
+  
+.bodypay {
+    font-size: 62.5%; /* 1rem = 10px */
+    background:rgb(205, 214, 226);
+    display: grid;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-size: 1.6rem;
+    min-height: 100vh;
+  }
+  
+  /* Layout */
+  .cc {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 800px) {
+    .cc {
+      gap: 6.4rem;
+      flex-direction: row;
+    }
+  }
+  
+  /* Form */
+  form {
+    color: rgb(12, 12, 12);
+    max-width: 100%;
+    width: 260px;
+  }
+  
+  fieldset {
+    appearance: none;
+    border: none;
+    display: grid;
+    gap: 2.4rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+  
+  legend {
+    font-size: 3.2rem;
+    margin-bottom: 2.4rem;
+    padding: 0;
+  }
+  
+  label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+  
+  input[type="text"] {
+    appearance: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(12, 11, 11);
+    color: rgb(61, 59, 59);
+    display: block;
+    font-family: 'Source Sans 3';
+    font-size: 1.8rem;
+    outline: none;
+    padding: 0.4rem 0;
+    width: 100%;
+  }
+  
+  input[type="text"]::placeholder {
+    color: rgb(61, 59, 59);
+    font-size: 1.6rem;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #89CB75;
+  }
+  
+  input[type="submit"] {
+    appearance: none;
+    background-color: #89CB75;
+    border: none;
+    border-radius: 0.2rem;
+    color: black;
+    cursor: pointer;
+    font-family: 'Source Sans 3';
+    font-size: 1.8rem;
+    justify-self: start;
+    margin-top: -1.6rem;
+    padding: 0.8rem 1.6rem;
+  }
+  
+  input[type="submit"][disabled] {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .paybutton
+  {
+    font-size: 20px;
+    padding: 10px;
+  background-color:rgb(243, 245, 248);
+  transition: background-color 0.3s ease;
+  border-radius: 20px; 
+  cursor: pointer;
+  color: #000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  .fieldgroup {
+    grid-column: 1 / -1;
+    margin-bottom: 1.6rem;
+  }
+  
+  .fieldgroup--half {
+    grid-column: unset;
+  }
+  
+  /* Credit Card */
+ 
+  .cc__card {
+    border-radius: 0.8rem;
+    box-shadow: 0 0.8rem 4rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+    justify-content: space-between;
+    padding: 2.4rem;
+    position: relative;
+    width: 42rem;
+    z-index: 1;
+  }
+  
+  .cc__card::before {
+    background: linear-gradient(#C1D9EB, #3F86BE);
+    border-radius: 0.8rem;
+    content: '';
+    position: absolute;
+    top: -0.1rem;
+    left: -0.1rem;
+    bottom: -0.1rem;
+    right: -0.1rem;
+    z-index: -2;
+  }
+  
+  .cc__card::after {
+    background-color: #5994C2;
+    border-radius: 0.8rem;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .cc__logo {
+    margin-bottom: 1.6rem;
+    width: 3.6rem;
+  }
+  
+  .cc__cardgroup {
+    flex-grow: 1;
+  }
+  
+  .cc__cardgroup--wide {
+    flex-basis: 100%;
+  }
+  
+  .cc__card-label {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+  
+  .cc__card-value {
+    color: white;
+    height: 3.2rem;
+    line-height: 3.2rem;
+  }
+  
+  .cc__card-value--large {
+    font-family: 'PT Mono', monospace;
+    font-size: 2.4rem;
+    height: 4.8rem;
+    line-height: 4.8rem;
+  }
+  

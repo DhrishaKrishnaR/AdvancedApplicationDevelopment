@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+
+
+.body3 {
+  background: #d4cba2;
+  box-sizing: border-box;
+  font-size: 1.6em;
+  min-height: 100vh;
+  align-items: center;
+  position: absolute;
+  width: calc(50% - 4em);
+    left: 300px;
+  
+  min-height: 100vh;
+  transition: 0.5s;
+  justify-content: center;
+}
+.body4 {
+  background: #d4cba2;
+  box-sizing: border-box;
+  font-size: 1.6em;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+h3, p {
+  margin: 0;
+  padding-bottom: .1em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.container4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 200px;
+}
+/*test are*/
+.theme-description {
+  width: 100%;
+  height: 100px; /* Adjust the height as needed */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; /* Allow vertical resizing */
+  font-family: 'Roboto', sans-serif; /* Use your preferred font */
+  font-size: 14px; /* Adjust the font size as needed */
+  color: #333; /* Text color */
+  background-color: #f8f8f8; /* Background color */
+}
+.theme-description[readonly] {
+  background-color: #eee; /* Change background color when readonly */
+  border-color: #ddd; /* Change border color when readonly */
+  cursor: not-allowed; /* Change cursor style when readonly */
+}
+/* PRODUCT CARD */
+.product-card {
+  width: calc(25% - 4em); /* Adjust the width of each card */
+  margin-top: 2em; /* Adjust the margin between cards */
+}
+.product-card:nth-child(n+6) {
+  margin-top: 3em; /* Add extra margin to the top of the fifth card */
+}
+.product-card {
+  background-color: #f5f6fa;
+  border-radius: 10px;
+  color: #04204b;
+  margin: 0 2em;
+  transition: all linear .2s;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: .2em .5em .5em rgba(0, 0, 0, 0.4);
+  justify-content: space-between;
+}
+
+.product-card:hover,
+.product-card:active {
+  box-shadow: .2em .5em .5em rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+.edit-theme-button {
+  background-color:rgb(12, 12, 12);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 13px;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+.edit-theme-button:hover {
+  background-color:rgb(83, 72, 72);
+}
+.product-img {
+  border-radius: 10px 10px 0 0;
+  height: 180px;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-1 {
+  background-image: url(https://rukminim2.flixcart.com/image/850/1000/xif0q/shopsy-birthday-combo/i/n/v/happy-birthday-decoration-kit-golden-black-birthday-decorations-original-imagqshpdh4w7g8h.jpeg?q=20&crop=false);
+}
+
+.img-2 {
+  background-image: url(https://cdn.cherishx.com/uploads/1562151788_large.jpg);
+}
+
+.img-3{
+  background-image: url(https://m.media-amazon.com/images/I/71XVCY4Ad4L.jpg);
+}
+.img-4 {
+  background-image: url(https://m.media-amazon.com/images/I/81HcbCHOdbL.jpg);
+}
+.img-5{
+  background-image: url(https://m.media-amazon.com/images/I/71aiDu+fiVL.jpg);
+}
+.img-six{
+  background-image: url(https://m.media-amazon.com/images/I/81gZqozBtXL.jpg);
+}
+
+.side-heading {
+  color: #000;
+  font-style: italic;
+  font-size: 14px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+  padding-left: 20px; /* Add left padding to create space from the container edge */
+}
+
+.product-text {
+  padding: 1em;
+  text-align: center;
+}
+
+.product-cart button{
+  border: 0;
+  border-radius: 0 0 10px 10px;
+  color: #151516;
+  background-color: #729edb;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 1em;
+  text-transform: uppercase;
+  transition: all linear .3s;
+  width: 100%;
+}
+
+.product-cart button:hover {
+  font-weight: 500;
+  letter-spacing: .1em;
+}
+
+/* color */
+
+
+/* media queries */
+@media screen and (max-width: 860px) {
+  .container {
+    display: grid;
+    grid-auto-rows: auto;
+  }
+  
+  .product-card {
+    width: calc(50% - 4em);
+    margin: 1.5em;
+  }
+}
