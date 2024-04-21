@@ -1,0 +1,218 @@
+.info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999999;
+    margin: 1.5rem;
+  }
+  
+
+  html {
+    font-size: 10px;
+    font-size: calc(5px + 0.4vw);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: black;
+
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgba(225, 255, 255, .8);
+}
+  
+  /* Slider style */
+  .cd-slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+  
+  .cd-slider.ie9 nav div span {
+    display: none;
+  }
+  
+  .cd-slider ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transition: visibility 0s .6s;
+  }
+  
+  .cd-slider ul li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 100%;
+    width: 135vh;
+    height: 135vh;
+    border: solid white; 
+    border-width: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: border-width .4s .6s;
+  }
+  .prev::before, .prev::after, .next::before, .next::after {
+    content: '';
+    position: absolute;
+    left: 43%;
+    background: #000 !important; /* Set black color for arrows */
+    width: .4rem;
+    min-width: 3px;
+    border-radius: 3px;
+    height: 34%;
+  }
+  .content {
+    position: absolute;
+    top: 0;
+    left: 350px;
+    width: 50%; 
+    height: 100%; 
+    background-color: transparent;
+    background-position: 50% 100%;
+    background-size: auto 100%;
+    opacity: 0;
+    
+    transform: scale(1.2);
+    transition: opacity .4s .6s, transform .4s .6s;
+    border-radius: 50%; /* Make the content circular */
+  }
+  .content blockquote {
+    background-color: #fff;
+    margin-top:450px;
+    text-align: center;
+    top:80%;
+    margin-left: 350px;
+    transform: translateX(-50%);
+    width: 90%; /* Adjust the width as per your design */
+}
+
+  blockquote p {
+    font-size: 4rem;
+  }
+  
+  blockquote span {
+    font-size: 1.4rem;
+  }
+  
+  /* current slide */
+  .cd-slider li.current_slide {
+    visibility: visible;
+  }
+  
+  .cd-slider li.current_slide::before {
+    border-width: 16rem;
+  }
+  
+  .cd-slider li.current_slide .content {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* nav */
+  nav div {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    width: 5rem;
+    height: 5rem;
+    margin-top: -2.5rem;
+    list-style: none;
+  }
+  
+  nav div:last-of-type {
+    left: auto;
+    right: 4%;
+  }
+  
+  .prev,
+  .next {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 100%;
+    transition: box-shadow .3s;
+  }
+  
+  .prev::before,
+  .prev::after,
+  .next::before,
+  .next::after {
+    content: '';
+    position: absolute;
+    left: 43%;
+    background: #fff;
+    width: .4rem;
+    min-width: 3px;
+    border-radius: 3px;
+    height: 34%;
+  }
+  
+  .prev::before {
+    transform: rotate(45deg);
+    top: 24%;
+  }
+  
+  .prev::after {
+    transform: rotate(-45deg);
+    bottom: 24%;
+  }
+  
+  .next::before,
+  .next::after {
+    left: auto;
+    right: 43%;
+  }
+  
+  .next::before {
+    transform: rotate(-45deg);
+    top: 24%;
+  }
+  
+  .next::after {
+    transform: rotate(45deg);
+    bottom: 24%;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  nav > div > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    z-index: 5;
+    pointer-events: none;
+    will-change: width, height;
+    transform: translate(-50%, -50%);
+    transition: width .6s, height .6s;
+  }
+  .find
+{
+  font-size: 20px;
+  background-color:rgb(243, 245, 248);
+  transition: background-color 0.3s ease;
+  border-radius: 20px; 
+  cursor: pointer;
+  color: #000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.find:hover {
+  animation: shake 0.3s ease;
+  background-color: #b7c2ca; 
+}

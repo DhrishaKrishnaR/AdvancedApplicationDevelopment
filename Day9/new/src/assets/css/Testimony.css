@@ -1,0 +1,128 @@
+
+.section-white {
+	background: #fff;
+	padding: 50px 0;
+}
+.container1
+{
+    font-family: "Raleway";
+}
+.team-item{
+	background: #f4f5f6;
+	text-align:center;
+	margin:20px 0;
+	padding:50px 20px 40px 20px;
+	border-radius: 8px 8px;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+.team-item:hover{
+	background:#BBE2EC;
+	color: rgb(44, 41, 41);
+}
+
+.heading2{
+    font-size: 25px;
+    text-align: center;
+    font-family: "Raleway";
+	display: absolute;
+
+}
+.team-item h3{
+	margin:20px 0 1px 0!important;
+	color:#454545;
+	font-size:18px;
+	font-weight: 700;
+	text-transform:uppercase;
+	transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+}
+.section-title {
+    font-size: 2rem; 
+    /* Adjust font size as needed */
+    margin-bottom: 20px; /* Adjust spacing as needed */
+  }
+.section-subtitle {
+	white-space: pre-line;
+    
+ }
+
+.team-item:hover h3{
+	color:#302f2f;
+}
+
+.team-info {
+	display: block;
+	margin-bottom:0;
+}
+
+.team-info p{
+	color:#5e5959;
+    font-size: 10px;
+	font-style:italic;
+    margin-bottom: 10px;
+
+}
+
+.team-info::after {
+    background: #008aff;
+    background: -webkit-linear-gradient(135deg, #6B02FF 0%, #985BEF 100%);
+    background: -o-linear-gradient(bottom right, #6B02FF, #985BEF);
+    background: -moz-linear-gradient(bottom right, #008aff, #1ad2fd);
+    background: linear-gradient(135deg, #6B02FF 0%, #985BEF 100%);
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 50px;
+    height: 3px; 
+}
+
+.team-img{
+	max-width: 140px;
+	padding: 6px 6px;
+    background-color: #dedede;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+ul.team-icon {
+	margin-top: 25px;
+}
+
+ul.team-icon li{
+	display: inline-block;
+	margin:0 3px;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+ul.team-icon li a{
+	margin: 0;
+	display: inline-block;
+	padding: 8px 8px;
+	width: 34px;
+	height: 34px;
+	font-size: 18px;
+	line-height: 18px;
+	background-color: #fff;
+	border-radius: 50%;
+	color:#fff;
+}
+
+.team-icon li a:hover{
+	color:#985BEF;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
